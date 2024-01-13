@@ -39,10 +39,6 @@ def count_open_orders(symbol):
     return len(orders)
 
 
-def open_positions(symbol):
-    positions = mt5.positions
-
-
 def close_orders_in_profit(symbol):
     # Fetch open orders for the given symbol
     orders = mt5.orders_get(symbol=symbol)
